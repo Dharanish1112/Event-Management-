@@ -8,7 +8,7 @@ import { renderTopbar } from '../components/topbar.js';
 import { createBarChart, createLineChart, createDoughnutChart } from '../components/charts.js';
 import { navigate } from '../main.js';
 
-const API = 'http://localhost:5001/api';
+const API = 'https://event-management-nroc.onrender.com/api';
 function getToken() { return localStorage.getItem('token') || ''; }
 function getUser()  { try { return JSON.parse(localStorage.getItem('user')) || null; } catch { return null; } }
 

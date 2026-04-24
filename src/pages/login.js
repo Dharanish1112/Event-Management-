@@ -5,7 +5,7 @@
 import { icons } from '../components/icons.js';
 import { navigate, showToast } from '../main.js';
 
-const API = 'http://localhost:5001/api';
+const API = 'https://event-management-nroc.onrender.com/api';
 
 // ---- helpers ----
 function validateEmail(email) {
