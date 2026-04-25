@@ -399,7 +399,7 @@ export function renderLogin(container) {
           }, 600);
         } catch (err) {
           console.error('Login error:', err);
-          showToast(`Network error: ${err.message}. Check if backend is running on port 5001.`, 'error');
+          showToast(`Network error: ${err.message}. Backend server error. Please try again.`, 'error');
           submitting = false;
           setLoading(btn, false);
         }
@@ -488,7 +488,7 @@ export function renderLogin(container) {
           }, 600);
         } catch (err) {
           console.error('Register error:', err);
-          showToast(`Network error: ${err.message}. Check if backend is running on port 5001.`, 'error');
+          showToast(`Network error: ${err.message}. Backend server error. Please try again.`, 'error');
           submitting = false;
           setLoading(btn, false);
         }
